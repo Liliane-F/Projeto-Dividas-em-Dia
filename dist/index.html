@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,15 +13,15 @@
     <main class="flex min-h-screen">
 
         <aside class="w-64 bg-blue-900 text-white flex flex-col p-6">
-            
+
             <div class="mb-12">
 
                 <h1 class="text-3xl font-bold">
-                Dívidas
+                    Dívidas
                 </h1>
 
                 <span class="text-xl">
-                em dia
+                    em dia
                 </span>
 
             </div>
@@ -80,27 +81,27 @@
         </aside>
 
         <section class="flex-1 p-8 bg-gray-100">
-            
+
             <header class="flex justify-between items-start mb-10">
                 <!-- Lado esquerdo -->
                 <div>
 
                     <h1 class="text-4xl font-bold text-gray-800">Dashboard
                     </h1>
-                     <p class="text-gray-500 mt-2">Acompanhe seu progresso e organize suas dívidas
-                     </p>
+                    <p class="text-gray-500 mt-2">Acompanhe seu progresso e organize suas dívidas
+                    </p>
 
                 </div>
-               
+
                 <!-- Lado direito -->
                 <div class="flex items-center gap-6">
                     <span class="text--2xl">
                         🔔
                     </span>
-                    
+
                     <div class="flex items-center gap-3">
                         <div class="w-12 h-12 rounded-full bg-gray-300">
-                    
+
                         </div>
 
                         <span class="font-medium text-gray-700">
@@ -125,10 +126,10 @@
                 <!-- Cabeçalho -->
 
                 <div class="flex items-center gap-4 mb-8">
-                    
+
                     <div class="w-12 h-12 rounded-full bg-green-100 flex items-center justify-center">
 
-                    🎯
+                        🎯
                     </div>
 
                     <h2 class="text-2xl font-semibold text-gray-800">
@@ -144,7 +145,7 @@
                 <div class="w-full bg-gray-200 rounded-full h-8 overflow-hidden">
 
                     <div class="bg-green-500 h-full w-[65%] rounded-full">
-                    
+
                     </div>
 
                 </div>
@@ -166,23 +167,23 @@
                     <div class="text-center">
 
                         <div class="text-5xl">
-                             🏆
+                            🏆
                         </div>
 
                         <p class="text-green-500 font-semibold">
-                            
+
                             Continue assim!
 
                         </p>
 
                         <p class="text-sm text-gray-500">
-                            
+
                             Você está cada vez mais perto da liberdade financeira!
-                        
+
                         </p>
 
                     </div>
-                    
+
                 </div>
 
             </section>
@@ -190,7 +191,7 @@
             <!-- Cards de informações -->
 
             <div class="grid grid-cols-2 gap-6 mb-8">
-            
+
                 <!-- Primeiro Card -->
 
                 <div class="bg-white rounded-3xl p-6 shadow-md">
@@ -200,7 +201,7 @@
                     </p>
 
                     <h2 class="text-3xl font-bold text-blue-500">
-                        R$ 12.500,00
+                        R$ 25.000,00
                     </h2>
 
                 </div>
@@ -214,14 +215,338 @@
                     </p>
 
                     <h2 class="text-3xl font-bold text-green-500">
-                        R$ 4.375,00
+                        R$ 8.750,00
                     </h2>
 
-                </div>    
+                </div>
 
             </div>
 
-        </main>  
+            <!-- Lista de dívidas -->
+
+            <section class="bg-white rounded-3xl p-8 shadow-md mb-8">
+
+             <!-- Cabeçalho -->
+
+            <div class="flex justify-between items-center mb-6">
+
+                <div class="flex items-center gap-3">
+
+                    <span class="text-blue-600 text-xl">
+                        ☰
+                    </span>
+
+                    <h2 class="text-2xl font-semibold text-gray-800">
+                        Minhas Dívidas
+                    </h2>
+                </div>
+
+                <button class="border border-blue-500 text-blue-500 rounded-xl px-4 py-2 hover:bg-blue-50">
+                    Ordenar por Taxa de Juros ▼
+                </button>
+
+            </div>
+
+            <!-- Tabela de dívidas -->
+
+            <div class="flex flex-col gap-4">
+
+                <!-- Card 1 -->
+
+                <div class="bg-white border border-gray-200 rounded-xl p-6 shadow-sm">
+
+                    <div class="grid grid-cols-6 items-center gap-4">
+
+
+                        <!-- Credor -->
+                        <div class="flex items-center gap-4">
+
+                            <div class="w-14 h-14 bg-blue-500 rounded-2xl flex items-center justify-center text-white text-2xl">
+                                🏦
+                            </div>
+
+                            <div>
+
+                                <h3 class="font-bold text-lg">
+                                    Banco X
+                                </h3>
+
+                                <p class="text-gray-500">
+                                    Empréstimo Pessoal
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                        <!-- Valor -->
+                        <div class="border-l pl-4">
+
+                            <p class="text-gray-500 text-sm">
+                                Valor devido
+                            </p>
+
+                            <p class="text-xl">
+                                R$ 10,000,00
+                            </p>
+
+                        </div>
+
+                        <!-- Juros -->
+
+                        <div class="border-l pl-4">
+
+                            <p class="text-gray-500 text-sm">
+                                Taxa de Juros
+                            </p>
+
+                            <p class="text-red-500 font-bold">
+                                12% a.a
+                            </p>
+
+                        </div>
+
+                        <!-- Parcela-->
+
+                        <div class="border-l pl-4">
+
+                            <p class="text-gray-500 text-sm">
+                                Parcela mensal
+                            </p>
+
+                            <p>
+                                R$ 450,00
+                            </p>
+
+                        </div>
+
+                        <!--Vencimento -->
+
+                        <div class="border-l pl-4">
+
+                            <p class="text-gray-500 text-sm">
+                                Vencimento
+                            </p>
+
+                            <p>
+                                15/06/2024
+                            </p>
+
+                        </div>
+
+                        <!-- Status -->
+
+                        <div class="flex justify-end">
+
+                            <span class="bg-yellow-100 text-yellow-600 px-6 py-2 rounded-full">
+                                Em andamento
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- Card 2 -->
+
+                <div class="bg-white border border-gray-200 rounded-xl p-6 shadow-sm">
+
+                    <div class="grid grid-cols-6 items-center gap-4">
+
+                        <!-- Credor -->
+                        <div class="flex items-center gap-4">
+
+                            <div
+                                class="w-14 h-14 bg-blue-500 rounded-2xl flex items-center justify-center text-white text-2xl">
+                                💳
+                            </div>
+
+                        <div>
+
+                            <h3 class="font-bold text-lg">
+                                Cartão Y
+                            </h3>
+
+                            <p class="text-gray-500">
+                                Fatura do cartão
+                            </p>
+
+                        </div>
+                    
+                     </div>
+
+                        <!-- Valor -->
+                        <div class="border-l pl-4">
+
+                            <p class="text-gray-500 text-sm">
+                                Valor devido
+                            </p>
+
+                            <p class="text-xl">
+                                R$ 5,000,00
+                            </p>
+
+                        </div>
+
+                        <!-- Juros -->
+
+                        <div class="border-l pl-4">
+
+                            <p class="text-gray-500 text-sm">
+                                Taxa de Juros
+                            </p>
+
+                            <p class="text-red-500 font-bold">
+                                18% a.a
+                            </p>
+
+                        </div>
+
+                        <!-- Parcela-->
+
+                        <div class="border-l pl-4">
+
+                            <p class="text-gray-500 text-sm">
+                                Parcela mensal
+                            </p>
+
+                            <p>
+                                R$ 250,00
+                            </p>
+
+                        </div>
+
+                        <!--Vencimento -->
+
+                        <div class="border-l pl-4">
+
+                            <p class="text-gray-500 text-sm">
+                                Vencimento
+                            </p>
+
+                            <p>
+                                05/06/2024
+                            </p>
+
+                        </div>
+
+                        <!-- Status -->
+
+                        <div class="flex justify-end">
+
+                            <span class="bg-red-100 text-red-500 px-6 py-2 rounded-full">
+                                Atrasado
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- Card 3 -->
+
+                <div class="bg-white border border-gray-200 rounded-xl p-6 shadow-sm">
+
+                    <div class="grid grid-cols-6 items-center gap-4">
+
+                        <!-- Credor -->
+                        <div class="flex items-center gap-4">
+
+                            <div
+                                class="w-14 h-14 bg-blue-500 rounded-2xl flex items-center justify-center text-white text-2xl">
+                                🚗
+                            </div>
+
+                            <div>
+
+                                <h3 class="font-bold text-lg">
+                                    Banco X
+                                </h3>
+
+                                <p class="text-gray-500">
+                                    Empréstimo Pessoal
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                        <!-- Valor -->
+                        <div class="border-l pl-4">
+
+                            <p class="text-gray-500 text-sm">
+                                Valor devido
+                            </p>
+
+                            <p class="text-xl">
+                                R$ 10,000,00
+                            </p>
+
+                        </div>
+
+                        <!-- Juros -->
+
+                        <div class="border-l pl-4">
+
+                            <p class="text-gray-500 text-sm">
+                                Taxa de Juros
+                            </p>
+
+                            <p class="text-orange-400 font-bold">
+                                9% a.a
+                            </p>
+
+                        </div>
+
+                        <!-- Parcela-->
+
+                        <div class="border-l pl-4">
+
+                            <p class="text-gray-500 text-sm">
+                                Parcela mensal
+                            </p>
+
+                            <p>
+                                R$ 450,00
+                            </p>
+
+                        </div>
+
+                        <!--Vencimento -->
+
+                        <div class="border-l pl-4">
+
+                            <p class="text-gray-500 text-sm">
+                                Vencimento
+                            </p>
+
+                            <p>
+                                15/06/2024
+                            </p>
+
+                        </div>
+
+                        <!-- Status -->
+
+                        <div class="flex justify-end">
+
+                            <span class="bg-green-100 text-green-600 px-6 py-2 rounded-full">
+                                Em dia
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+             </div>
+
+            </section>
+
+    </main>
 </body>
 
 </html>
