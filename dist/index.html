@@ -10,6 +10,32 @@
 
 <body class="bg-gray-100">
 
+    <div class="md:hidden bg-blue-900 text-white p-4">
+
+        <details>
+
+            <summary class="cursor-pointer font-semibold">
+
+                ☰ Menu
+
+            </summary>
+
+            <nav class="flex flex-col gap-3 mt-4">
+
+                <a href="#">Dashboard</a>
+                <a href="#">Dívidas</a>
+                <a href="#">Pagamentos</a>
+                <a href="#">Simulador</a>
+                <a href="#">Relatórios</a>
+                <a href="#">Metas</a>
+                <a href="#">Alertas</a>
+
+            </nav>
+
+        </details>
+
+    </div>
+
     <main class="flex flex-col md:flex-row min-h-screen">
 
         <aside class="hidden md:flex w-64 bg-blue-900 text-white flex flex-col p-6">
@@ -250,13 +276,13 @@
             <!-- Tabela de dívidas -->
                 <div class="overflow-x-auto">
 
-                    <div class="flex flex-col gap-4 min-w-[1250px]">
+                    <div class="flex flex-col gap-4">
 
                         <!-- Card 1 -->
 
                         <div class="bg-white border border-gray-200 rounded-xl p-6 shadow-sm">
 
-                            <div class="grid grid-cols-[4fr_200px_200px_200px_200px_150px] items-center gap-4">
+                            <div class="grid grid-cols-1 md:grid-cols-[3fr_1fr_1fr_1fr_1fr_auto] gap-4 items-center">
 
 
                                 <!-- Credor -->
@@ -273,7 +299,7 @@
                                             Banco X
                                         </h3>
 
-                                        <p class="text-gray-500 whitespace-nowrap">
+                                        <p class="text-gray-500 text-sm md:text-base">
 
                                             Empréstimo Pessoal
                                         </p>
@@ -283,7 +309,7 @@
                                 </div>
 
                                 <!-- Valor -->
-                                <div class="border-l pl-4">
+                                <div class="md:border-l md:pl-4">
 
                                     <p class="text-gray-500 text-sm">
                                         Valor devido
@@ -297,7 +323,7 @@
 
                                 <!-- Juros -->
 
-                                <div class="border-l pl-4">
+                                <div class="md:border-l md:pl-4">
 
                                     <p class="text-gray-500 text-sm">
                                         Taxa de Juros
@@ -311,7 +337,7 @@
 
                                 <!-- Parcela-->
 
-                                <div class="border-l pl-4">
+                                <div class="md:border-l md:pl-4">
 
                                     <p class="text-gray-500 text-sm">
                                         Parcela mensal
@@ -325,7 +351,7 @@
 
                                 <!--Vencimento -->
 
-                                <div class="border-l pl-4">
+                                <div class="md:border-l md:pl-4">
 
                                     <p class="text-gray-500 text-sm">
                                         Vencimento
@@ -355,7 +381,7 @@
 
                         <div class="bg-white border border-gray-200 rounded-xl p-6 shadow-sm">
 
-                            <div class="grid grid-cols-[4fr_200px_200px_200px_200px_150px] items-center gap-4">
+                            <div class="grid grid-cols-1 md:grid-cols-[3fr_1fr_1fr_1fr_1fr_auto] gap-4 items-center">
 
                                 <!-- Credor -->
                                 <div class="flex items-center gap-4 min-w-0">
@@ -371,7 +397,7 @@
                                         Cartão Y
                                     </h3>
 
-                                    <p class="text-gray-500 whitespace-nowrap">
+                                    <p class="text-gray-500 text-sm md:text:base">
                                         Fatura do cartão
                                     </p>
 
@@ -380,7 +406,7 @@
                             </div>
 
                                 <!-- Valor -->
-                                <div class="border-l pl-4">
+                                <div class="md:border-l md:pl-4">
 
                                     <p class="text-gray-500 text-sm">
                                         Valor devido
@@ -394,7 +420,7 @@
 
                                 <!-- Juros -->
 
-                                <div class="border-l pl-4">
+                                <div class="md:border-l md:pl-4">
 
                                     <p class="text-gray-500 text-sm">
                                         Taxa de Juros
@@ -408,7 +434,7 @@
 
                                 <!-- Parcela-->
 
-                                <div class="border-l pl-4">
+                                <div class="md:border-l md:pl-4">
 
                                     <p class="text-gray-500 text-sm">
                                         Parcela mensal
@@ -422,7 +448,7 @@
 
                                 <!--Vencimento -->
 
-                                <div class="border-l pl-4">
+                                <div class="md:border-l md:pl-4">
 
                                     <p class="text-gray-500 text-sm">
                                         Vencimento
@@ -452,7 +478,7 @@
 
                         <div class="bg-white border border-gray-200 rounded-xl p-6 shadow-sm">
 
-                            <div class="grid grid-cols-[4fr_200px_200px_200px_200px_150px] items-center gap-4">
+                            <div class="grid grid-cols-1 md:grid-cols-[3fr_1fr_1fr_1fr_1fr_auto] gap-4 items-center">
 
                                 <!-- Credor -->
                                 <div class="flex items-center gap-4 min-w-0">
@@ -468,7 +494,7 @@
                                             Financiamento Z
                                         </h3>
 
-                                        <p class="text-gray-500 whitespace-nowrap">
+                                        <p class="text-gray-500 text-sm md:text-base">
                                             Financiamento de Veículo
                                         </p>
 
@@ -477,7 +503,7 @@
                                 </div>
 
                                 <!-- Valor -->
-                                <div class="border-l pl-4">
+                                <div class="md:border-l md:pl-4">
 
                                     <p class="text-gray-500 text-sm">
                                         Valor devido
@@ -491,7 +517,7 @@
 
                                 <!-- Juros -->
 
-                                <div class="border-l pl-4">
+                                <div class="md:border-l md:pl-4">
 
                                     <p class="text-gray-500 text-sm">
                                         Taxa de Juros
@@ -505,7 +531,7 @@
 
                                 <!-- Parcela-->
 
-                                <div class="border-l pl-4">
+                                <div class="md:border-l md:pl-4">
 
                                     <p class="text-gray-500 text-sm">
                                         Parcela mensal
@@ -519,7 +545,7 @@
 
                                 <!--Vencimento -->
 
-                                <div class="border-l pl-4">
+                                <div class="md:border-l md:pl-4">
 
                                     <p class="text-gray-500 text-sm">
                                         Vencimento
