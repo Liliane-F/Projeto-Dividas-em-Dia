@@ -4,7 +4,7 @@ Dashboard desenvolvido para auxiliar no acompanhamento e organização de dívid
 
 ## 📸 Preview
 
-![Dashboard Dívidas em Dia](./images/dashboard-preview.png)
+![Dashboard Dívidas em Dia](./dist/images/dashboard-preview.png)
 
 ## ✨ Funcionalidades
 
