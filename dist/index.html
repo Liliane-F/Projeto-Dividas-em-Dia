@@ -15,17 +15,46 @@
 
 <body class="bg-gray-100">
 
+    <!-- Menu mobile -->
+
     <div class="md:hidden bg-blue-900 text-white p-4">
 
-        <details>
+        <details class="mobile-menu">
 
-            <summary class="cursor-pointer font-semibold">
+            <summary class="flex items-center gap-2 cursor-pointer font-semibold">
 
-                ☰ Menu
+                <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                    
+                    <path d="M0 0h24v24H0z" fill="none" />
+                    <path fill="currentColor" d="M4 18q-.425 0-.712-.288T3 17t.288-.712T4 16h16q.425 0 .713.288T21 17t-.288.713T20 18zm0-5q-.425 0-.712-.288T3 12t.288-.712T4 11h16q.425 0 .713.288T21 12t-.288.713T20 13zm0-5q-.425 0-.712-.288T3 7t.288-.712T4 6h16q.425 0 .713.288T21 7t-.288.713T20 8z" />
+                
+                </svg>
+                
+                <span>Menu</span>
 
-            </summary>
+            </summary>           
 
             <nav class="flex flex-col gap-3 mt-4">
+
+                <div class="flex items-center gap-3 pb-4 border-b border-blue-700">
+
+                    <svg class="w-6 h-6 text-white"
+                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+
+                        <path d="M0 0h24v24H0z" fill="none" />
+                        <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                        <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2" />
+                        <circle cx="12" cy="7" r="4" />
+                        </g>
+
+                    </svg>
+
+
+                    <span class="font-semibold uppercase tracking-wide">
+                        Perfil
+                    </span>
+
+                </div>
 
                 <a href="#">Dashboard</a>
                 <a href="#">Dívidas</a>
@@ -222,7 +251,7 @@
         <section class="flex-1 p-8 bg-gray-100">
 
             <!-- Header -->
-            <header class="flex justify-between items-start mb-10">
+            <header class="flex justify-between items-start mb-8">
                 
                 <!-- Lado esquerdo -->
                 <div>
@@ -231,14 +260,14 @@
                         Dashboard
                     </h1>
 
-                    <p class="text-gray-500 mt-2">
+                    <p class="text-gray-500 mt-2 [max-w-180px]">
                         Acompanhe seu progresso e organize suas dívidas
                     </p>
 
                 </div>
 
                 <!-- Lado direito -->
-                <div class="flex items-center gap-8">
+                <div class="hidden md:flex items-center gap-6">
 
                     <!-- Sino -->
                      <div class="relative">
@@ -264,7 +293,7 @@
                             <img 
                                 src="./images/Avatar.png"
                                 alt="Foto de Perfil"
-                                class="w-12 h-12 rounded-full object-cover"
+                                class="w-10 h-10 rounded-full object-cover"
                             />
 
                             <span class="font-medium text-gray-700">

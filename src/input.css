@@ -3,3 +3,11 @@
 body {
     font-family: "Inter", sans-serif;
 }
+
+.mobile-menu summary {
+    list-style: none;
+}
+
+.mobile-menu summary::webkit-details-marker {
+    display:none
+}
